@@ -51,7 +51,7 @@ export default function NewsSection() {
           {news.map((item, i) => (
             <div
               key={i}
-              className={`rounded-lg overflow-hidden flex flex-col ${
+              className={`rounded-lg overflow-hidden flex flex-col card-hover animate-on-scroll delay-${i + 1} ${
                 item.featured
                   ? "bg-maroon text-white"
                   : "bg-white text-foreground"

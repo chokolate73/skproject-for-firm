@@ -19,7 +19,7 @@ export default function ProcessSection() {
   return (
     <section className="bg-[#e8e8e8] eu-stars-pattern">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <h2 className="font-serif text-4xl md:text-5xl text-foreground text-center mb-16">
+        <h2 className="font-serif text-4xl md:text-5xl text-foreground text-center mb-16 animate-on-scroll">
           Poskytujeme komplexnú službu
         </h2>
 
@@ -28,7 +28,7 @@ export default function ProcessSection() {
           {/* Main steps row */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-8">
             {steps.map((step) => (
-              <div key={step.number} className="text-center">
+              <div key={step.number} className={`text-center animate-on-scroll delay-${step.number}`}>
                 <div className="starburst w-20 h-20 bg-maroon text-white mx-auto mb-4 flex items-center justify-center">
                   <span className="font-serif text-2xl font-bold italic">
                     {step.number}

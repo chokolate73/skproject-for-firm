@@ -49,13 +49,13 @@ export default function ReferencesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">
+            <h3 key={`title-${current}`} className="font-serif text-3xl md:text-4xl font-bold text-white mb-6 slide-in">
               {ref.title}
             </h3>
-            <p className="text-gray-400 leading-relaxed mb-6">
+            <p key={`desc-${current}`} className="text-gray-400 leading-relaxed mb-6 slide-in" style={{ animationDelay: "0.1s" }}>
               {ref.description}
             </p>
-            <p className="text-white font-bold text-sm">{ref.client}</p>
+            <p key={`client-${current}`} className="text-white font-bold text-sm slide-in" style={{ animationDelay: "0.2s" }}>{ref.client}</p>
 
             {/* Slide counter */}
             <div className="flex items-center gap-3 mt-8">
