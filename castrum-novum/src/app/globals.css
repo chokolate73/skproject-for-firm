@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #e8e8e8;
+  --foreground: #1a1a2e;
+  --maroon: #8B1A2B;
+  --maroon-dark: #6d1422;
+  --dark-bg: #2a2d3a;
+  --card-bg: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-maroon: var(--maroon);
+  --color-maroon-dark: var(--maroon-dark);
+  --color-dark-bg: var(--dark-bg);
+  --color-card-bg: var(--card-bg);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* EU Stars watermark */
+.eu-stars-pattern {
+  position: relative;
+}
+
+.eu-stars-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='%23d0d0d0' opacity='0.3'%3E%3Cpolygon points='200,20 208,44 234,44 213,58 220,82 200,68 180,82 187,58 166,44 192,44'/%3E%3Cpolygon points='80,80 88,104 114,104 93,118 100,142 80,128 60,142 67,118 46,104 72,104'/%3E%3Cpolygon points='320,80 328,104 354,104 333,118 340,142 320,128 300,142 307,118 286,104 312,104'/%3E%3Cpolygon points='50,220 58,244 84,244 63,258 70,282 50,268 30,282 37,258 16,244 42,244'/%3E%3Cpolygon points='350,220 358,244 384,244 363,258 370,282 350,268 330,282 337,258 316,244 342,244'/%3E%3Cpolygon points='120,320 128,344 154,344 133,358 140,382 120,368 100,382 107,358 86,344 112,344'/%3E%3Cpolygon points='280,320 288,344 314,344 293,358 300,382 280,368 260,382 267,358 246,344 272,344'/%3E%3Cpolygon points='200,180 208,204 234,204 213,218 220,242 200,228 180,242 187,218 166,204 192,204'/%3E%3Cpolygon points='320,300 328,324 354,324 333,338 340,362 320,348 300,362 307,338 286,324 312,324'/%3E%3Cpolygon points='80,300 88,324 114,324 93,338 100,362 80,348 60,362 67,338 46,324 72,324'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.eu-stars-pattern > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Starburst badge for process steps */
+.starburst {
+  clip-path: polygon(50% 0%, 61% 11%, 75% 3%, 80% 18%, 95% 18%, 93% 33%, 105% 40%, 97% 52%, 105% 62%, 93% 68%, 95% 83%, 80% 82%, 75% 97%, 61% 89%, 50% 100%, 39% 89%, 25% 97%, 20% 82%, 5% 83%, 7% 68%, -5% 62%, 3% 52%, -5% 40%, 7% 33%, 5% 18%, 20% 18%, 25% 3%, 39% 11%);
+}
