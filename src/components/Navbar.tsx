@@ -40,7 +40,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-foreground hover:text-maroon transition-colors font-medium"
+                className="nav-link text-sm text-foreground hover:text-maroon transition-colors font-medium"
               >
                 {link.label}
               </Link>

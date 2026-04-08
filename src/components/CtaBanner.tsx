@@ -4,7 +4,7 @@ export default function CtaBanner() {
   return (
     <section className="bg-[#e8e8e8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="bg-maroon rounded-lg overflow-hidden">
+        <div className="bg-maroon rounded-lg overflow-hidden animate-on-scroll">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="p-10 md:p-16">
               <h2 className="font-serif text-3xl md:text-4xl text-white font-bold italic mb-4">
@@ -15,7 +15,7 @@ export default function CtaBanner() {
               </p>
               <Link
                 href="/kontakt"
-                className="inline-flex items-center gap-2 bg-maroon-dark text-white px-8 py-4 rounded hover:bg-[#5a1019] transition-colors text-sm font-medium border border-white/20"
+                className="inline-flex items-center gap-2 bg-maroon-dark text-white px-8 py-4 rounded hover:bg-[#5a1019] btn-animate text-sm font-medium border border-white/20"
               >
                 Mám záujem
                 <span>&rarr;</span>

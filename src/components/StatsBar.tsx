@@ -10,7 +10,7 @@ export default function StatsBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {stats.map((stat, i) => (
-            <div key={i}>
+            <div key={i} className={`count-animate delay-${i + 1}`}>
               <div className="font-serif text-5xl md:text-6xl font-bold text-maroon mb-2">
                 {stat.number}
               </div>

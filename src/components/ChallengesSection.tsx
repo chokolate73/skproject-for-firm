@@ -45,7 +45,7 @@ export default function ChallengesSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {challenges.map((challenge, i) => (
-            <div key={i} className="bg-white rounded-lg overflow-hidden flex flex-col">
+            <div key={i} className={`bg-white rounded-lg overflow-hidden flex flex-col card-hover animate-on-scroll delay-${i + 1}`}>
               <div className="p-6 flex-1">
                 <h3 className="font-serif text-lg font-semibold text-foreground mb-4 leading-snug">
                   {challenge.title}

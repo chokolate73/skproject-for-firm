@@ -30,7 +30,7 @@ export default function HeroSection() {
           {/* Left: Text */}
           <div>
             {/* Slide counter */}
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-8 hero-animate">
               <button
                 onClick={prev}
                 className="text-maroon hover:text-maroon-dark transition-colors text-xl"
@@ -55,13 +55,16 @@ export default function HeroSection() {
               </button>
             </div>
 
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-tight text-foreground whitespace-pre-line">
+            <h1
+              key={current}
+              className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-tight text-foreground whitespace-pre-line slide-in"
+            >
               {slides[current].title}
             </h1>
           </div>
 
           {/* Right: Image placeholder */}
-          <div className="relative">
+          <div className="relative hero-animate-delay">
             <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg overflow-hidden aspect-[4/3] flex items-end">
               <div className="w-full h-full bg-gradient-to-t from-green-700/30 to-transparent flex items-center justify-center">
                 <div className="text-center text-white/80">
